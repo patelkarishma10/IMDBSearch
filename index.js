@@ -49,6 +49,18 @@ function searchFilms() {
                 myType.innerHTML = String(data2.Search[i].Type);
                 myRow.appendChild(myType);
 
+                let myMoreDetail = document.createElement('td');
+                myRow.appendChild(myMoreDetail);
+                let moreInfobtn = document.createElement('input');
+                moreInfobtn.type = "button";
+                moreInfobtn.value = "More Detail";
+                moreInfobtn.onclick = function nextPage() {
+                    window.location.href = 'page2.html';
+                    sessionStorage.setItem('id', data2.Search[i].imdbID);
+                    sessionStorage.setItem('value', data2.Search[i]);
+                };
+                myMoreDetail.appendChild(moreInfobtn);
+
             }
 
         })
