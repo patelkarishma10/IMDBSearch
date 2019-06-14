@@ -3,7 +3,6 @@
 
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
@@ -11,7 +10,19 @@
     <form>
 
         <input type="text" id="searchFilm">
-        <input type="button" id="submitSearch" value="Search">
+        <input type="button" id="submitSearch" value="Search" onclick="searchFilms()">
 
     </form>
-</body></html>
+
+    <table id="searchTable">
+        <tr>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Type</th>
+            <th>More Detail</th>
+        </tr>
+    </table>
+    </form>
+</body>
+
+</html>
