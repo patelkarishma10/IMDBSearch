@@ -57,7 +57,7 @@ function searchFilms() {
                 moreInfobtn.onclick = function nextPage() {
                     window.location.href = 'page2.html';
                     sessionStorage.setItem('id', data2.Search[i].imdbID);
-                    sessionStorage.setItem('id', data2.Search[i]);
+                    sessionStorage.setItem('value', data2.Search[i]);
                 };
                 myMoreDetail.appendChild(moreInfobtn);
 
