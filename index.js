@@ -49,6 +49,19 @@ function searchFilms() {
                 myType.innerHTML = String(data2.Search[i].Type);
                 myRow.appendChild(myType);
 
+                let myMoreDetail = document.createElement('td');
+                myRow.appendChild(myMoreDetail);
+                let moreInfobtn = document.createElement('input');
+                moreInfobtn.type = "button";
+                moreInfobtn.value = "More Detail";
+//                let petid = newobj1[i]["id"];
+//                moreInfobtn.onclick = (function () {
+//                    return function () {
+//                        getVisits(petid);
+//                    }
+//                })(newobj1[i]["id"]);
+                myMoreDetail.appendChild(moreInfobtn);
+
             }
 
         })
