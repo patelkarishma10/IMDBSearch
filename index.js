@@ -54,12 +54,11 @@ function searchFilms() {
                 let moreInfobtn = document.createElement('input');
                 moreInfobtn.type = "button";
                 moreInfobtn.value = "More Detail";
-//                let petid = newobj1[i]["id"];
-//                moreInfobtn.onclick = (function () {
-//                    return function () {
-//                        getVisits(petid);
-//                    }
-//                })(newobj1[i]["id"]);
+                moreInfobtn.onclick = function nextPage() {
+                    window.location.href = 'page2.html';
+                    sessionStorage.setItem('id', data2.Search[i].imdbID);
+                    sessionStorage.setItem('id', data2.Search[i]);
+                };
                 myMoreDetail.appendChild(moreInfobtn);
 
             }
